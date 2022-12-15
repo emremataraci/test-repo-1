@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='order_line']" position="before">
                 <group>
-                    <button name="%(act_open_select_products_view)d" type="action" string="Select Products"
+                    <button name="%(act_open_select_products_view)" type="selection" string="Select Products"
                         context="{'default_flag_order': 'po'}" attrs="{'invisible': [('state', '!=', 'draft')]}"
                         class="oe_highlight" />
                 </group>
