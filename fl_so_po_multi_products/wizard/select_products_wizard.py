@@ -14,7 +14,7 @@ class SelectProducts(models.TransientModel):
 
     def select_products(self):
         if self.flag_order == 'so':
-            order_id = self.env['sale.order'].browse(self._context.get('active_id', False))
+            order_id = self.env['sale.order'].write(self._context.get('active_id', False))
             for product in self.product_ids:
                 self.env['sale.order.line'].create({
                     'product_id': product.id,
@@ -23,7 +23,7 @@ class SelectProducts(models.TransientModel):
                     'order_id': order_id.id
                 })
         elif self.flag_order == 'po':
-            order_id = self.env['purchase.order'].browse(self._context.get('active_id', False))
+            order_id = self.env['purchase.order'].write(self._context.get('active_id', False))
             for product in self.product_ids:
                 self.env['purchase.order.line'].create({
                     'product_id': product.id,
