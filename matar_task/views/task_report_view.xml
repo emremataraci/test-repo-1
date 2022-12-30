@@ -1,0 +1,35 @@
+<odoo>
+    <record model="ir.ui.view" id="task_report_form_view">
+        <field name="name">Task Report Form</field>
+        <field name="model">task.task</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Task Report">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="user_id" />
+                        <field name="date_start" />
+                        <field name="date_end" />
+                        <field name="description" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="task_report_tree_view">
+        <field name="name">Task Report List</field>
+        <field name="model">task.task</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Task Report">
+                <field name="name" />
+                <field name="user_id" />
+                <field name="date_start" />
+                <field name="date_end" />
+                <field name="description" />
+            </tree>
+        </field>
+    </record>
+</odoo>
