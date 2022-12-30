@@ -1,5 +1,5 @@
 {
-    'name': 'INIT - Beauty Progressbar',
+    'name': 'matar ProgressBar',
     'version': '15.0.1.0.2',
     'category': 'Extra Tools',
     'summary': 'Beauty Progressbar',

@@ -11,6 +11,6 @@
       Print task details with all worklog entries and task hours summary""",
     "maintainer": "Serpent Consulting Services Pvt. Ltd.",
     "depends": ["hr_timesheet"],
-    "data": ["views/project_task_report.xml", "report/project_task_qweb_report.xml"],
+    "data": ["views/project_task_report.xml", "views/project_report_template.xml","report/project_task_qweb_report.xml"],
     "installable": True,
 }
