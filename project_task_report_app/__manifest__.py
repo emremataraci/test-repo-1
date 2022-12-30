@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Project and Task Report in Odoo',
-    "author": "Edge Technologies",
+    "author": "matar",
     'version': '15.0.1.0',
     'live_test_url': "https://youtu.be/RGymMBdvNhw",
     "images":['static/description/main_screenshot.png'],
@@ -27,7 +27,7 @@ project pdf reports project task pdf reports
             "views/project_task_report_template.xml",
             ],
     'installable': True,
-    'auto_install': False,
+    'auto_install': True,
     'price': 000,
     'currency': "EUR",
     'category': 'Project',
